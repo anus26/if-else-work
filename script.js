@@ -20,16 +20,40 @@
 //     console.log('ok') 
 // }
 
-var salary = 350000;
-var salary = +prompt('Enter your salary');
+// var salary = 350000;
+// var salary = +prompt('Enter your salary');
 
-if (salary >=30000){
-    console.log('sadi pki')
-}
-else if(salary <= 20000){
-    console.log('bhai sccuses hasil kar')
+// if (salary >=30000){
+//     console.log('sadi pki')
+// }
+// else if(salary <= 20000){
+//     console.log('bhai sccuses hasil kar')
     
-}
-else{
-    console.log('study kar')
+// }
+// else{
+//     console.log('study kar')
+// }
+// ASSIGMENT 
+// 1 ANSWER
+
+// const num =3
+// if(num >=3) {
+//     console.log('Number is disvible');
+    
+// }else {
+//     console.log('Number is not disvible');
+// }
+// 2 ANSWER
+
+
+
+const inputnumber=parseInt(document.querySelector('#number').value)
+function getsubmit(){
+    
+    // console.log(number.value)
+    if(inputnumber % 2 === 0 ){
+        console.log('Even');
+    }else{
+        console.log('Odd');
+    }
 }
