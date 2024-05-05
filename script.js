@@ -47,8 +47,8 @@
 
 
 
-// const inputnumber=parseInt(document.querySelector('#number').value)
 // function getsubmit(){
+    // const inputnumber=parseInt(document.querySelector('#number').value)
     
 //     // console.log(number.value)
 //     if(inputnumber % 2 === 0 ){
@@ -56,11 +56,76 @@
 //     }else{
 //         console.log('Odd');
 //     }
-// }
-const age = 18
-if (age <= 17) {
-    console.log('old engouh');
+// // }
+
+// 3 ANSWER
+// const age = 18
+// if (age <= 17) {
+//     console.log('old engouh');
     
-}else{
-    console.log('Too engouh');
+// }else{
+//     console.log('Too engouh');
+// }
+// 4 ANSWER
+
+// const names=prompt('Enter your name')
+// if (names ){
+//     console.log('name enterd:',names);
+//     console.log('shows');
+    
+// }else{
+//     console.log('not Enter name:');
+
+//     console.log('not shows');
+// }
+// 5 ANSWER
+
+// function getsubmit() {
+//     const inputnumber=parseInt(document.querySelector('#number').value)
+//     if(inputnumber % 3 === 0){
+//         console.log('number is disvible by 3')
+//     }else{
+//     console.log('number is not disvible by 3');
+// }
+
+// // }
+
+function isUpperCase(char) {
+    return char >= 'A'& char <= 'z'
+    
 }
+function isLowerCase(char) {
+    return char >= 'a'& char <= 'z'
+}
+function getsubmit(inputfield){
+    const number=document.querySelector('#number').value
+if(inputfield) {
+    console.log (  isUpperCase(number) || isLowerCase(number))
+    console.log('upper letter');
+}else{
+    // return char >= 'a'& char <= 'z'
+    console.log('lower letter');
+}
+}
+
+// console.log( char 'upper letter & lower letter');
+
+// function isLowerCase(char) {
+//     return char >= 'a' && char <= 'z'; }
+
+// function isUpperCase(char) {
+//     return char >= 'A' && char <= 'Z';
+// }
+
+// function getSubmit(inputField) {
+//     const number = document.querySelector('#number').value;
+//     if (inputField) {
+//         if (isUpperCase(number) || isLowerCase(number)) {
+//             console.log('Letter is either upper or lower case.');
+//         } else {
+//             console.log('Not a letter.');
+//         }
+//     } else {
+//         console.log('lower letter');
+//     }
+
