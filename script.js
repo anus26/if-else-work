@@ -47,13 +47,20 @@
 
 
 
-const inputnumber=parseInt(document.querySelector('#number').value)
-function getsubmit(){
+// const inputnumber=parseInt(document.querySelector('#number').value)
+// function getsubmit(){
     
-    // console.log(number.value)
-    if(inputnumber % 2 === 0 ){
-        console.log('Even');
-    }else{
-        console.log('Odd');
-    }
+//     // console.log(number.value)
+//     if(inputnumber % 2 === 0 ){
+//         console.log('Even');
+//     }else{
+//         console.log('Odd');
+//     }
+// }
+const age = 18
+if (age <= 17) {
+    console.log('old engouh');
+    
+}else{
+    console.log('Too engouh');
 }
