@@ -90,23 +90,22 @@
 
 // // }
 
-function isUpperCase(char) {
-    return char >= 'A'& char <= 'z'
+// function isUpperCase(char) {
+//     return char >= 'A'& char <= 'z'
     
-}
-function isLowerCase(char) {
-    return char >= 'a'& char <= 'z'
-}
-function getsubmit(inputfield){
-    const number=document.querySelector('#number').value
-if(inputfield) {
-    console.log (  isUpperCase(number) || isLowerCase(number))
-    console.log('upper letter');
-}else{
+// }
+// function isLowerCase(char) {
+//     return char >= 'a'& char <= 'z'
+// }
+// function getsubmit(inputfield){
+//     const number=document.querySelector('#number').value
+// if(inputfield) {
+//     console.log (  isUpperCase(number) || isLowerCase(number))
+//     console.log('upper letter');
+// }else{
     // return char >= 'a'& char <= 'z'
-    console.log('lower letter');
-}
-}
+    // console.log('lower letter');
+
 
 // console.log( char 'upper letter & lower letter');
 
@@ -128,4 +127,62 @@ if(inputfield) {
 //     } else {
 //         console.log('lower letter');
 //     }
+const number1=parseFloat(prompt
+    ('num1'))
+const number2=parseFloat(prompt('num2'))
 
+
+
+
+function calculator(operator,num1,num2) {
+    switch (operator) {
+        case     '+':
+            return number1 + number2
+            case     '-':
+                return number1 -  number2
+                case     '*':
+                    return number1 * number2
+                    case     '/':
+
+                        if (number2 === 0) {
+
+                            
+                            return number1 / number2
+                        }else{
+                            return 'no divide by zero'
+                        }
+                        case     '%':
+
+                        if (number2 === 0) {
+
+                            
+                            return number1 % number2
+                        }else{
+                            return 'no divide by zero'
+                        }
+                    
+
+         default:
+         return "Invalid operator"       
+    }
+    
+}
+
+
+const result1 = calculator('+', number1, number2);
+console.log(result1);
+
+const result2 = calculator('-', number1, number2);
+console.log(result2);
+
+
+const result3 = calculator('*', number1, number2);
+console.log(result3);
+
+
+const result4 = calculator('/', number1, number2);
+console.log(result4);
+
+
+const result5 = calculator('%', number1, number2);
+console.log(result5);
