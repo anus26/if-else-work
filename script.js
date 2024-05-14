@@ -127,62 +127,75 @@
 //     } else {
 //         console.log('lower letter');
 //     }
-const number1=parseFloat(prompt
-    ('num1'))
-const number2=parseFloat(prompt('num2'))
+
+// const number1=parseFloat(prompt
+//     ('num1'))
+// const number2=parseFloat(prompt('num2'))
 
 
 
 
-function calculator(operator,num1,num2) {
-    switch (operator) {
-        case     '+':
-            return number1 + number2
-            case     '-':
-                return number1 -  number2
-                case     '*':
-                    return number1 * number2
-                    case     '/':
+// function calculator(operator,num1,num2) {
+//     switch (operator) {
+//         case     '+':
+//             return number1 + number2
+//             case     '-':
+//                 return number1 -  number2
+//                 case     '*':
+//                     return number1 * number2
+//                     case     '/':
 
-                        if (number2 === 0) {
-
-                            
-                            return number1 / number2
-                        }else{
-                            return 'no divide by zero'
-                        }
-                        case     '%':
-
-                        if (number2 === 0) {
+//                         if (number2 === 0) {
 
                             
-                            return number1 % number2
-                        }else{
-                            return 'no divide by zero'
-                        }
+//                             return number1 / number2
+//                         }else{
+//                             return 'no divide by zero'
+//                         }
+//                         case     '%':
+
+//                         if (number2 === 0) {
+
+                            
+//                             return number1 % number2
+//                         }else{
+//                             return 'no divide by zero'
+//                         }
                     
 
-         default:
-         return "Invalid operator"       
-    }
+//          default:
+//          return "Invalid operator"       
+//     }
     
+// }
+
+
+// const result1 = calculator('+', number1, number2);
+// console.log(result1);
+
+// const result2 = calculator('-', number1, number2);
+// console.log(result2);
+
+
+// const result3 = calculator('*', number1, number2);
+// console.log(result3);
+
+
+// const result4 = calculator('/', number1, number2);
+// console.log(result4);
+
+
+// const result5 = calculator('%', number1, number2);
+// console.log(result5);
+const time=0000 
+function gettime() {
+    const timeInput = document.querySelector('#number').value;
+    // const [hours, minutes] = timeInput.split(':');
+    // const time = parseInt(hours) * 100 + parseInt(minutes);
+
+    if (time >= 0 && time < 1200) {
+        console.log('Good morning');
+    } else if (time >= 1200 && time < 1700) {
+        console.log('Good afternoon');
+    }
 }
-
-
-const result1 = calculator('+', number1, number2);
-console.log(result1);
-
-const result2 = calculator('-', number1, number2);
-console.log(result2);
-
-
-const result3 = calculator('*', number1, number2);
-console.log(result3);
-
-
-const result4 = calculator('/', number1, number2);
-console.log(result4);
-
-
-const result5 = calculator('%', number1, number2);
-console.log(result5);
