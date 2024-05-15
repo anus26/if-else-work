@@ -180,22 +180,33 @@
 // const result3 = calculator('*', number1, number2);
 // console.log(result3);
 
-
 // const result4 = calculator('/', number1, number2);
 // console.log(result4);
 
 
 // const result5 = calculator('%', number1, number2);
 // console.log(result5);
-const time=0000 
-function gettime() {
-    const timeInput = document.querySelector('#number').value;
-    // const [hours, minutes] = timeInput.split(':');
-    // const time = parseInt(hours) * 100 + parseInt(minutes);
 
-    if (time >= 0 && time < 1200) {
+
+const times =parseInt(prompt('Enter the time in 24-hout format (e.g., 0930 for 9:30 AM):' ))
+const times2 = parseInt(prompt('Enter the time in 24-hour format (e.g., 0930 for 9:30 AM):'));
+
+    if (times >= 0 && times < 1200) {
         console.log('Good morning');
-    } else if (time >= 1200 && time < 1700) {
-        console.log('Good afternoon');
+   } else if (time >= 1200 && time < 1700) {
+      console.log('Good afternoon');
+    }else if (times >1700 && times< 2100) {
+        console.log("good evening");
+    }else {
+        console.log("good night");
     }
-}
+
+// const times = parseInt(prompt('Enter the time in 24-hour format (e.g., 0930 for 9:30 AM):'));
+
+// if (times >= 0 && times2 < 1200) {
+//     console.log('Good morning');
+// } else if (times >= 1200 && times < 1700) {
+//     console.log('Good afternoon');
+// } else {
+//     console.log('Good evening');
+// }
